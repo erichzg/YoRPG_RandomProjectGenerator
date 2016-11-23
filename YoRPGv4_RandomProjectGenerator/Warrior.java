@@ -7,8 +7,9 @@ public class Warrior extends Character{
 
     int defaultDef = 30;
     double defaultAtk = 0.6;
+    double chanceOfRandomDeath = 0.1;
 
-	public void specialize() {
+    public void specialize() {
 	defense -= 5;
 	atkRtg += 0.1;
     }
@@ -30,4 +31,5 @@ public class Warrior extends Character{
 	this();
 	name = newName;
     }
+
 }
