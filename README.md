@@ -7,13 +7,13 @@ Hello
 
 ##Feature Addition
 ###Update for xp (Eric Zhang):
-	__Added level and experience variables for characters.__  
+	####Added level and experience variables for characters.  
 	4 experience is gained from defeating each enemy.  
 	Level is calculated as the square root of experience.  
 	All stats are multiplied by 1.1 when leveling up, and HP is fully restored.  
 	
 ###Stat display (Dawei Huang):
-	__Added stats display for both character and monster.__  
+	####Added stats display for both character and monster.  
 	Stats are health, strength, defense, and attack rating.  
 	Stats display at the end of every encounter.  
 	
