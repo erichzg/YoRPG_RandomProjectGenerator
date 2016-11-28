@@ -161,6 +161,18 @@ public class YoRPG
 
 		System.out.println( "\n" + "Ye Olde Monster smacked " + pat.getName() +
 				    " for " + d2 + " points of damage.");
+					
+		//Displays Stats of both character and monster after each encounter
+		System.out.println("\nCharacter Stats:");
+		System.out.println("Health: " + healthNormalize(pat.HP));
+		System.out.println("Strength: " + pat.strength);
+		System.out.println("Defense: " + pat.defense);
+		System.out.println("Attack Rating: " + pat.atkRtg);
+		System.out.println("\nMonster Stats:");
+		System.out.println("Health: " + healthNormalize(smaug.HP));
+		System.out.println("Strength: " + smaug.strength);
+		System.out.println("Defense: " + smaug.defense);
+		System.out.println("Attack Rating: " + smaug.atkRtg + "\n");
 	    }//end while
 
 	    //option 1: you & the monster perish
@@ -174,6 +186,7 @@ public class YoRPG
 	    //option 2: you slay the beast
 	    else if ( !smaug.isAlive() ) {
 		System.out.println( "HuzzaaH! Ye olde monster hath been slain!\n+4xp" );
+		//exp display
 		pat.addExp(4);
 		return true;
 	    }
@@ -186,6 +199,13 @@ public class YoRPG
 
 	return true;
     }//end playTurn()
+	
+	public static int healthNormalize(int health){
+		if (health < 0){
+			return 0;
+		}
+		return health;
+	}
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
