@@ -40,16 +40,16 @@ public abstract class Character {
 	level = levelExp();
 	if (level == prevLvl + 1) {
 	    updateStats();
+	    System.out.println("Level up!");
+	    System.out.println("Max HP: "+maxHP/1.1+" -> "+maxHP);
+	    System.out.println("Strength: "+strength/1.1+" -> "+strength);
+	    System.out.println("Defense: "+defense/1.1+" -> "+defense);
+	    System.out.println("Attack: "+atkRtg/1.1+" -> "+atkRtg);
 	}
-	System.out.println("Level up!");
-	System.out.println("Max HP: "+maxHP/1.1+" -> "+maxHP);
-	System.out.println("Strength: "+strength/1.1+" -> "+strength);
-	System.out.println("Defense: "+defense/1.1+" -> "+defense);
-	System.out.println("Attack: "+atkRtg/1.1+" -> "+atkRtg);
     }
 
     public int levelExp() {
-	return (int) Math.log(experience);
+	return (int) Math.sqrt(experience);
     }
 
     public void updateStats() {
