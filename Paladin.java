@@ -5,8 +5,8 @@
 
 public class Paladin extends Character{
 
-    int defaultDef = 50;
-    double defaultAtk = 0.4;
+    int defaultDef = 150;
+    double defaultAtk = 0.1;
 
 	public void specialize() {
 	defense -= 5;
@@ -20,9 +20,9 @@ public class Paladin extends Character{
 	
     public Paladin() {
 	name = "";
-	maxHP = 150;
-	HP = 150;
-	strength = 75;
+	maxHP = 250;
+	HP = 250;
+	strength = 125;
 	defense = defaultDef;
 	atkRtg = defaultAtk;
     }

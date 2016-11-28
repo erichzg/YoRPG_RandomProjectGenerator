@@ -4,6 +4,7 @@
 //HW#34 -- Ye Olde Role Playing Game, Unchained..
 
 public class Monster extends Character{
+    
     public void specialize() {
 	defense -= 5;
 	atkRtg += 0.1;

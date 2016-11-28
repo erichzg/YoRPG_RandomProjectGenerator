@@ -6,7 +6,7 @@
 public class Rogue extends Character{
 
     int defaultDef = 30;
-    double defaultAtk = 0.4;
+    double defaultAtk = 0.2;
 
 	public void specialize() {
 	defense -= 5;
@@ -20,9 +20,9 @@ public class Rogue extends Character{
 	
     public Rogue() {
 	name = "";
-	maxHP = 150;
-	HP = 150;
-	strength = 125;
+	maxHP = 100;
+	HP = 100;
+	strength = 175;
 	defense = defaultDef;
 	atkRtg = defaultAtk;
     }

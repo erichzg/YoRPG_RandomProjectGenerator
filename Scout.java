@@ -6,7 +6,7 @@
 public class Scout extends Character{
 
     int defaultDef = 50;
-    double defaultAtk = 0.4;
+    double defaultAtk = 0.7;
 
 	public void specialize() {
 	defense -= 5;
@@ -20,9 +20,9 @@ public class Scout extends Character{
 	
     public Scout() {
 	name = "";
-	maxHP = 100;
-	HP = 100;
-	strength = 125;
+	maxHP = 50;
+	HP = 50;
+	strength = 20;
 	defense = defaultDef;
 	atkRtg = defaultAtk;
     }
