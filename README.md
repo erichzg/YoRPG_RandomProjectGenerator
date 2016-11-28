@@ -1,9 +1,5 @@
-# YoRPG_RandomProjectGenerator
-APCS1 YoRPG
-
-Documentation for YoRPG
-
-Hello
+#Documentation for Team YoRPG_RandomProjectGenerator
+Team Members: Dawei Huang, Mohamed Tamara, Eric Zhang
 
 ##Feature Addition
 ###Update for xp (Eric Zhang):
