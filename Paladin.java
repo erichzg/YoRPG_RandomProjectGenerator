@@ -20,6 +20,7 @@ public class Paladin extends Character{
 	
     public Paladin() {
 	name = "";
+	maxHP = 150;
 	HP = 150;
 	strength = 75;
 	defense = defaultDef;

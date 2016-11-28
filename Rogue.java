@@ -20,6 +20,7 @@ public class Rogue extends Character{
 	
     public Rogue() {
 	name = "";
+	maxHP = 150;
 	HP = 150;
 	strength = 125;
 	defense = defaultDef;

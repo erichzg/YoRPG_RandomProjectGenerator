@@ -20,6 +20,7 @@ public class Scout extends Character{
 	
     public Scout() {
 	name = "";
+	maxHP = 100;
 	HP = 100;
 	strength = 125;
 	defense = defaultDef;

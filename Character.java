@@ -6,11 +6,11 @@
 public abstract class Character {
 
     protected String name;
-    protected int HP, strength, defense, defaultDef, level;
-    protected double atkRtg, defaultAtk, experience;
+    protected int maxHP, HP, strength, defense, defaultDef;
+    protected double atkRtg, defaultAtk;
 
-    level = 1;
-    experience = 0;
+    protected int level = 1;
+    protected int experience = 0;
 
     public boolean isAlive() {
 	return HP > 0;
@@ -34,18 +34,36 @@ public abstract class Character {
 	return damage;
     }
 
-    public void addExp(Character person, double amount) {
-	
+    public void addExp(int amount) {
+	experience += amount;
+	int prevLvl = level;
+	level = levelExp();
+	if (level == prevLvl + 1) {
+	    updateStats();
+	}
+	System.out.println("Level up!");
+	System.out.println("Max HP: "+maxHP/1.1+" -> "+maxHP);
+	System.out.println("Strength: "+strength/1.1+" -> "+strength);
+	System.out.println("Defense: "+defense/1.1+" -> "+defense);
+	System.out.println("Attack: "+atkRtg/1.1+" -> "+atkRtg);
     }
 
-    public int levelExp(double xp) {
-	return (int) log(xp);
+    public int levelExp() {
+	return (int) Math.log(experience);
+    }
+
+    public void updateStats() {
+	maxHP *= 1.1;
+	HP = maxHP;
+	strength *= 1.1;
+	defense *= 1.1;
+        atkRtg *= 1.1;
     }
 	
     public abstract void specialize();
-	
+
     public abstract void normalize();
-	
+
     public String about(){
 	String aboutStr = "";
 	aboutStr += "Warrior: A hero with low health, high strength, low defense, and high attack \n";

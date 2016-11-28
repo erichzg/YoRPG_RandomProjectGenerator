@@ -21,6 +21,7 @@ public class Warrior extends Character{
 	
     public Warrior() {
 	name = "";
+	maxHP = 100;
 	HP = 100;
 	strength = 125;
 	defense = defaultDef;
