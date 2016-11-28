@@ -8,13 +8,13 @@ Team Members: Dawei Huang, Mohamed Tamara, Eric Zhang
 * Level is calculated as the square root of experience.  
 * All stats are multiplied by 1.1 when leveling up, and HP is fully restored.  
 
-##Code Reconstructions
-No part of the origin code was reconstructed for the purposes of augmenting the features into the game. Methods and print statements were inserted in various parts of the code but the overall code structure remained the same.
-	
-##Stat display (Dawei Huang):
+###Stat display (Dawei Huang):
 **Added stats display for both character and monster.**  
 * Stats are health, strength, defense, and attack rating.  
 * Stats display at the end of every encounter.  
+
+##Code Reconstructions
+No part of the origin code was reconstructed for the purposes of augmenting the features into the game. Methods and print statements were inserted in various parts of the code but the overall code structure remained the same.
 	
 ##Gameplay
 	1) Select the difficulty of the gameplay (Easy, Not So Easy, Beowulf hath nothing on me. Bring it on)
